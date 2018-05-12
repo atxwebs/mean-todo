@@ -1,11 +1,14 @@
-'use strict';
+'use strict'
 
-var mongoose = require('mongoose');
+var mongoose = require('mongoose')
 
-mongoose.connect('mongodb://localhost/mean-todo', function(err) {
-  if (err) {
-    console.log('Failed connecting to MongoDB!');
-  } else {
-    console.log('Successfully connected to MongoDB!');
+mongoose.connect(
+  'mongodb://seth:austin@ds061395.mlab.com:61395/mean-todo',
+  function(err) {
+    if (err) {
+      console.log('Failed connecting to MongoDB!')
+    } else {
+      console.log('Successfully connected to MongoDB!')
+    }
   }
-});
+)
